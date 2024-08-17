@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .font {
             font-family: "Bebas Neue", sans-serif;
@@ -23,8 +26,13 @@
             <div class="h-[40px] w-[292px]">
                 <img src="project/icons/logo.png" alt="">
             </div>
+            <div class="md:hidden">
+                <i class="fa-sharp fa-regular fa-bars"></i>
+            </div>
             <div>
-                <ul class="flex gap-4">
+
+
+                <ul class="sm:hidden md:flex gap-4 ">
                     <li><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
                     <li><a href="">About Us</a></li>
@@ -33,7 +41,7 @@
             </div>
         </nav>
         <!-- nav finished -->
-        <div class="flex justify-evenly items-center sm:flex-row ">
+        <div class="flex justify-evenly items-center sm:flex-row md: flex-col">
             <div class="space-y-3">
                 <h1 class="text-5xl uppercase font">
                     <span class="text-[#FABE4C]">BE THE PENGUINS</span>
@@ -55,10 +63,10 @@
         </div>
     </header>
     <main class="max-w-7xl mx-auto">
-        <section class="py-12">
+        <section class="py-12 ">
             <h1 class="text-5xl font pb-10 ">Women Jackets</h1>
-            <div class="grid grid-cols-3 gap-7 ">
-                <div class="space-y-3 drop-shadow-2xl ">
+            <div class=" grid md:grid-cols-3 gap-7  sm:grid-cols-1 ">
+                <div class="space-y-3 drop-shadow-2xl">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="project/images/jacket-1.png" alt="">
                     </div>
@@ -110,7 +118,7 @@
         </section>
         <section class="py-12">
             <h1 class="text-5xl font pb-10 ">men Jackets</h1>
-            <div class="grid grid-cols-3 gap-7 ">
+            <div class="grid md:grid-cols-3 gap-7  sm:grid-cols-1  ">
                 <div class="space-y-3 drop-shadow-2xl ">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="project/images/jacket-4.png" alt="">
@@ -163,14 +171,14 @@
 
     </main>
 
-    <footer class="mx-auto mb-16">
-        <div class="flex px-32 gap-40 ">
-            <div>
+    <footer class="  mb-16">
+        <div class="flex sm: flex-col-reverse md:flex-row md:px-32 md:gap-36 ">
+            <div class="mx-auto">
                 <div class="py-4 flex h-[130px] w-[480px] rounded-3xl drop-shadow-xl bg-[#FFFFFF] mb-8 ">
-                    <div class="w-20 h-20">
+                    <div class="  w-20 h-20">
                         <img src="project/icons/house.png" alt="">
                     </div>
-                    <div class="py-">
+                    <div class="md:pt-100">
                         <h1 class="text-3xl">Find the perfect Fit</h1>
                         <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Quaerat, obcaecati!</p>
                     </div>
@@ -196,7 +204,7 @@
                 </div>
 
             </div>
-            <div class="h-[354px] w-[600px]">
+            <div class="sm:w-[300px] sm:h-[173px] md:h-[354px] md:w-[600px]">
                 <img src="project/images/shopping.png" alt="">
             </div>
 
